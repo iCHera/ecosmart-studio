@@ -16,5 +16,9 @@ export default defineConfig({
   },
   server: { 
     host: true,
-  }
+  },
+  base: '/ecosmart-studio/',
+  build: {
+    outDir: 'docs',
+  },
 })

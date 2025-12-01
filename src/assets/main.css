@@ -1,1 +1,126 @@
+:root {
+  --bg-color: #ffffff;       
+  --surface-color: #f5f5f5;   
+  --text-primary: #171717;      
+  --text-secondary: #666666;    
+  --border-color: rgba(0, 0, 0, 0.1); 
+  --container-width: 1200px;
+  --font-main: 'Inter', sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+ul { list-style: none; }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section { padding: 100px 0; }
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.section-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden; 
+  z-index: 1; 
+  transition: color 0.7s ease; 
+  gap: 8px;
+  background-color: var(--bg-color);    
+  color: var(--text-primary);            
+  border: 1px solid var(--text-primary); 
+  transition: color 0.7s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-color: var(--text-primary);
+  z-index: -1; 
+  clip-path: circle(0% at 0% 100%);
+  transition: clip-path 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn:hover {
+  color: var(--bg-color); 
+  border-color: transparent;
+}
+
+.btn:hover::before {
+  clip-path: circle(150% at 0% 100%);
+}
+
+.btn svg {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn:hover svg {
+  transform: translateX(5px);
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }

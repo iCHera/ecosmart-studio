@@ -1,9 +1,9 @@
-<template>
-   <h1>test</h1>
-</template>
-
 <script setup lang="ts">
-
+import { RouterView } from 'vue-router';
+import Navbar from './components/Navbar.vue';
 </script>
 
-<style scoped></style>
+<template>
+  <Navbar />
+  <RouterView />
+</template>
