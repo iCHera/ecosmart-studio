@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ProjectView from '../views/ProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,13 +9,30 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/project/:id', 
+      name: 'project',
+      component: ProjectView
     }
   ],
   scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return { el: to.hash }
+    if (savedPosition) {
+      return savedPosition
     }
-    return { top: 0 }
+
+    if (to.hash) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            el: to.hash,
+            behavior: 'smooth',
+            top: 80 
+          })
+        }, 100) 
+      })
+    }
+    return { top: 0, left: 0, behavior: 'auto' }
   }
 })
 

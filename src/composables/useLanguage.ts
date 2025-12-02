@@ -37,9 +37,30 @@ const translations = {
       title: 'Featured Projects',
       link: 'View Project',
       items: [
-        { title: 'Eco Loft Apartment', desc: 'Modern eco-loft layout, natural materials.' },
-        { title: 'Smart Minimalist Home', desc: 'Clean Scandinavian design with automation.' },
-        { title: 'Green Family House', desc: 'Family eco-house with solar solutions.' }
+        { 
+          id: 'eco-loft', 
+          title: 'Eco Loft Apartment', 
+          desc: 'Modern eco-loft layout, natural materials.',
+          image: '/ecosmart-studio/project-wood.png', 
+          fullDesc: 'This project represents a perfect blend of urban living and nature. We utilized reclaimed wood and smart HVAC systems to reduce the carbon footprint while maintaining a luxurious aesthetic.',
+          details: { client: 'Private Client', area: '120 m²', year: '2024' }
+        },
+        { 
+          id: 'smart-minimalist',
+          title: 'Smart Minimalist Home', 
+          desc: 'Clean Scandinavian design with automation.',
+          image: '/ecosmart-studio/project-garden.png',
+          fullDesc: 'A fully automated home designed for a young family. Features include voice-controlled lighting, automated blinds, and a state-of-the-art security system, all wrapped in a minimal Scandinavian shell.',
+          details: { client: 'Family of 4', area: '250 m²', year: '2023' }
+        },
+        { 
+          id: 'green-family',
+          title: 'Green Family House', 
+          desc: 'Family eco-house with solar solutions.',
+          image: '/ecosmart-studio/concept-sketch.png',
+          fullDesc: 'Designed to be completely off-grid capable. This house features solar roof tiles, rainwater harvesting systems, and passive heating architecture.',
+          details: { client: 'Eco Developers', area: '300 m²', year: '2025' }
+        }
       ]
     },
     process: {
@@ -103,9 +124,30 @@ const translations = {
       title: 'Наши проекты',
       link: 'Смотреть проект',
       items: [
-        { title: 'Eco Loft Apartment', desc: 'Современная эколофт-планировка, натуральные материалы.' },
-        { title: 'Smart Minimalist Home', desc: 'Чистый скандинавский дизайн с автоматизацией.' },
-        { title: 'Green Family House', desc: 'Семейный эко-дом с солнечными решениями.' }
+        { 
+          id: 'eco-loft',
+          title: 'Eco Loft Apartment', 
+          desc: 'Современная эколофт-планировка, натуральные материалы.',
+          image: '/ecosmart-studio/project-wood.png',
+          fullDesc: 'Этот проект представляет собой идеальное сочетание городской жизни и природы. Мы использовали переработанное дерево и умные системы HVAC для снижения углеродного следа, сохраняя при этом роскошную эстетику.',
+          details: { client: 'Частный клиент', area: '120 м²', year: '2024' }
+        },
+        { 
+          id: 'smart-minimalist',
+          title: 'Smart Minimalist Home', 
+          desc: 'Чистый скандинавский дизайн с автоматизацией.',
+          image: '/ecosmart-studio/project-garden.png',
+          fullDesc: 'Полностью автоматизированный дом для молодой семьи. Включает голосовое управление светом, автоматические шторы и современную систему безопасности, всё в минималистичной скандинавской оболочке.',
+          details: { client: 'Семья из 4 человек', area: '250 м²', year: '2023' }
+        },
+        { 
+          id: 'green-family',
+          title: 'Green Family House', 
+          desc: 'Семейный эко-дом с солнечными решениями.',
+          image: '/ecosmart-studio/concept-sketch.png',
+          fullDesc: 'Спроектирован для полной автономности. Дом оснащен солнечной черепицей, системой сбора дождевой воды и архитектурой пассивного отопления.',
+          details: { client: 'Eco Developers', area: '300 м²', year: '2025' }
+        }
       ]
     },
     process: {

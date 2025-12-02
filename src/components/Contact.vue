@@ -67,10 +67,11 @@ input, textarea {
   border: 1px solid var(--border-color);
   padding: 16px;
   border-radius: 12px;
-  color: var(--text-primary); /* Исправлено: цвет текста под светлую тему */
+  color: var(--text-primary); 
   font-family: inherit;
   font-size: 16px;
   width: 100%;
+  
 }
 
 input:focus, textarea:focus {
@@ -107,6 +108,19 @@ footer {
   padding-top: 40px;
   color: var(--text-secondary);
   font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr; 
+    gap: 60px;
+  }
+  
+  .info-wrapper {
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {

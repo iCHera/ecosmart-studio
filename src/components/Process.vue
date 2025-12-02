@@ -57,7 +57,7 @@
   position: absolute;
   top: -12px;
   left: -10px;
-  background: var(--surface-color); /* Фон номера совпадает с фоном блока */
+  background: var(--surface-color); 
   border: 1px solid var(--border-color);
   padding: 4px 8px;
   font-size: 12px;
@@ -67,4 +67,10 @@
 
 .step h4 { font-size: 18px; margin-bottom: 8px; margin-top: 8px; }
 .step p { color: var(--text-secondary); font-size: 14px; }
+
+@media (max-width: 640px) {
+  .timeline {
+    grid-template-columns: 1fr; 
+  }
+}
 </style>

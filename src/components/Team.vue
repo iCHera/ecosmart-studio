@@ -107,6 +107,18 @@ h4 {
   letter-spacing: 1px;
 }
 
+@media (max-width: 1024px) {
+  .about-header {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .about-header {
     grid-template-columns: 1fr;

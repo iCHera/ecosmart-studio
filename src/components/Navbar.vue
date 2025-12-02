@@ -4,12 +4,12 @@
       <router-link to="/" class="logo">EcoSmart<span>Studio</span></router-link>
 
       <div class="desktop-menu">
-        <a href="#hero">{{ t.nav.home }}</a>
-        <a href="#services">{{ t.nav.services }}</a>
-        <a href="#portfolio">{{ t.nav.portfolio }}</a>
-        <a href="#process">{{ t.nav.process }}</a>
-        <a href="#about">{{ t.nav.about }}</a>
-        <a href="#contact">{{ t.nav.contact }}</a>
+        <router-link :to="{ path: '/', hash: '#hero' }">{{ t.nav.home }}</router-link>
+        <router-link :to="{ path: '/', hash: '#services' }">{{ t.nav.services }}</router-link>
+        <router-link :to="{ path: '/', hash: '#portfolio' }">{{ t.nav.portfolio }}</router-link>
+        <router-link :to="{ path: '/', hash: '#process' }">{{ t.nav.process }}</router-link>
+        <router-link :to="{ path: '/', hash: '#about' }">{{ t.nav.about }}</router-link>
+        <router-link :to="{ path: '/', hash: '#contact' }">{{ t.nav.contact }}</router-link>
       </div>
 
       <div class="nav-actions">
@@ -29,11 +29,11 @@
     </div>
 
     <div class="mobile-menu" :class="{ open: isMenuOpen }">
-      <a href="#hero" @click="isMenuOpen = false">{{ t.nav.home }}</a>
-      <a href="#services" @click="isMenuOpen = false">{{ t.nav.services }}</a>
-      <a href="#portfolio" @click="isMenuOpen = false">{{ t.nav.portfolio }}</a>
-      <a href="#about" @click="isMenuOpen = false">{{ t.nav.about }}</a>
-      <a href="#contact" @click="isMenuOpen = false">{{ t.nav.contact }}</a>
+      <router-link :to="{ path: '/', hash: '#hero' }" @click="isMenuOpen = false">{{ t.nav.home }}</router-link>
+      <router-link :to="{ path: '/', hash: '#services' }" @click="isMenuOpen = false">{{ t.nav.services }}</router-link>
+      <router-link :to="{ path: '/', hash: '#portfolio' }" @click="isMenuOpen = false">{{ t.nav.portfolio }}</router-link>
+      <router-link :to="{ path: '/', hash: '#about' }" @click="isMenuOpen = false">{{ t.nav.about }}</router-link>
+      <router-link :to="{ path: '/', hash: '#contact' }" @click="isMenuOpen = false">{{ t.nav.contact }}</router-link>
     </div>
   </nav>
 </template>
@@ -132,7 +132,7 @@
   gap: 24px;
   border-bottom: 1px solid var(--border-color);
   transform: translateY(-150%);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 99;
 }
 
@@ -141,6 +141,11 @@
   font-size: 20px; 
   font-weight: 600; 
   color: var(--text-primary);
+}
+
+@media (max-width: 1024px) { 
+  .desktop-menu, .cta-btn { display: none; }
+  .burger { display: block; }
 }
 
 @media (max-width: 768px) {

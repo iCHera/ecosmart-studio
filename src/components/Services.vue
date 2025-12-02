@@ -12,7 +12,6 @@
           v-animate
           :style="{ transitionDelay: `${index * 100}ms` }"
         >
-          <!-- :style выше делает так, что карточки появляются одна за другой -->
           <div class="icon-wrapper" v-html="icons[index]"></div>
           
           <h4>{{ item.title }}</h4>
@@ -53,7 +52,7 @@ const icons = [
 }
 
 .card:hover {
-  border-color: rgba(0, 0, 0, 0.2); /* Подправил под светлую тему */
+  border-color: rgba(0, 0, 0, 0.2); 
 }
 
 .icon-wrapper {

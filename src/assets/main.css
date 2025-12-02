@@ -14,11 +14,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; 
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
@@ -95,6 +90,7 @@ h1, h2, h3, h4 {
 .btn:hover {
   color: var(--bg-color); 
   border-color: transparent;
+  border: 0px;
 }
 
 .btn:hover::before {
