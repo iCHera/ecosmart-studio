@@ -41,7 +41,6 @@
           </form>
         </div>
 
-        <!-- Контакты -->
         <div class="info-wrapper" v-animate.delay-200>
           <div class="item">
             <div class="icon-circle">
@@ -84,7 +83,6 @@ const form = reactive({
   message: ''
 });
 
-// Состояния
 const isLoading = ref(false);
 const statusMessage = ref('');
 const statusType = ref(''); 

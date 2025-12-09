@@ -36,9 +36,9 @@ import { useLanguage } from '../composables/useLanguage';
 const { t } = useLanguage();
 
 const photos = [
+  '/ecosmart-studio/image4.jpg',
   '/ecosmart-studio/image2.jpg', 
   '/ecosmart-studio/image3.jpg', 
-  '/ecosmart-studio/image4.jpg' 
 ];
 </script>
 
