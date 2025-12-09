@@ -36,9 +36,9 @@ import { useLanguage } from '../composables/useLanguage';
 const { t } = useLanguage();
 
 const photos = [
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop', 
-  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop', 
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop' 
+  '/ecosmart-studio/image2.jpg', 
+  '/ecosmart-studio/image3.jpg', 
+  '/ecosmart-studio/image4.jpg' 
 ];
 </script>
 

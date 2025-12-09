@@ -85,9 +85,9 @@ const translations = {
       title: 'EcoSmart Studio — Architecture of the Future',
       desc: 'Our studio combines an engineering approach, minimalist design, technology, and ecology. We create homes that save energy, increase comfort, and look modern for years to come.',
       team: [
-        { name: 'Alex Morgan', role: 'Lead Architect' },
-        { name: 'Sarah Connor', role: 'Smart Systems Engineer' },
-        { name: 'David Chen', role: 'Interior Designer' }
+        { name: 'Vasilyeva Maria', role: 'Lead Architect' },
+        { name: 'Vasiliev Ivan', role: 'Smart Systems Engineer' },
+        { name: 'Vasilyeva Anna', role: 'Interior Designer' }
       ]
     },
   },
@@ -172,9 +172,9 @@ const translations = {
       title: 'EcoSmart Studio — архитектура будущего',
       desc: 'Наша студия сочетает инженерный подход, минималистичный дизайн, технологичность и экологичность. Мы создаём дома, которые экономят энергию, повышают комфорт и выглядят современно долгие годы.',
       team: [
-        { name: 'Алекс Морган', role: 'Ведущий архитектор' },
-        { name: 'Сара Коннор', role: 'Инженер Smart-систем' },
-        { name: 'Дэвид Чен', role: 'Дизайнер интерьеров' }
+        { name: 'Васильева Мария', role: 'Ведущий архитектор' },
+        { name: 'Васильев Иван', role: 'Инженер Smart-систем' },
+        { name: 'Васильева Анна', role: 'Дизайнер интерьеров' }
       ]
     },
   }
